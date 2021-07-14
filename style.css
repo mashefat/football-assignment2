@@ -149,6 +149,47 @@ nav{
 iframe{
  
 }
+/* animation section */
+.animation-section{
+    position: relative;
+}
+
+.f-all{
+    height: 600px;
+    width: 100%;
+    
+}
+.kick {
+    height: 175px;
+    position: absolute;
+    top: 26em;
+    left: 0;
+    z-index: 1;
+    transition: transform 0.2s ease-in;
+}
+
+.field:hover .kick{
+    transform: translate(50px);
+     transform-origin: top left;
+     
+}
+.ball{
+    transition: transform 1s ease-out 0.3s;
+}
+.animation-section:hover .ball{
+    transform: translate(900px, -70px);
+}
+.ball{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 27em;
+    left: 18.5em;
+    
+}
+
+
 /* Football Logo Section */
 .football-logo{
     text-align: center;
@@ -158,6 +199,7 @@ iframe{
     width: 480px;
     height: 110px;
 }
+
 /* Footer-section */
 .footer-section{
     text-align: center;
