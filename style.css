@@ -89,9 +89,9 @@ nav{
 }
 .players{
     display: flex;
-    align-items: center;
-    justify-content: ;
+    justify-content: center;
     flex-wrap: wrap;
+    
     
 
     /* display: grid;
@@ -108,6 +108,7 @@ nav{
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 30px;
     
 }
 .player-img{
@@ -234,12 +235,12 @@ iframe{
 
 
 /* Responsive Media Queries*/
-@media  screen and (max-width: 992px) {
+@media  screen and (maxgit a-width: 992px) {
     .banner{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        
       }
     .banner-text h1 {
         font-size: 40px;
@@ -251,7 +252,7 @@ iframe{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-         align-items: center;
+        
          
     }
     .highlight-text h1 {
