@@ -234,7 +234,7 @@ iframe{
 
 
 /* Responsive Media Queries*/
-@media  screen and (min-width: 992px) {
+@media  screen and (max-width: 992px) {
     .banner{
         display: flex;
         flex-wrap: wrap;
@@ -263,7 +263,7 @@ iframe{
         
     }
 }
-@media  screen and (min-width: 688px) {
+@media  screen and (max-width: 688px) {
     .banner{
       display: flex;
       flex-wrap: wrap;
