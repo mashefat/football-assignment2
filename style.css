@@ -3,10 +3,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.container{
-    width: 1160px;
-    margin: 0 150px;
-}
+
 .btn{
     background: #df3584;
     padding: 5px 20px;
@@ -24,17 +21,17 @@ nav{
     background: #2d25ad;
 }
 .navbar{
-    width: 1160px;
     display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    padding: 30px 15px; 
-    margin: 0 150px;
-    
+    justify-content: space-around;
+    padding: 30px 15px;  
     
 }
 
-
+.menu-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .menu-left span:hover{
     background: rgb(106, 95, 218);
     border-radius: 5px;
@@ -56,14 +53,14 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-around;
     padding: 30px 0;
     
 }
 .banner-text{
-    width: 40%;
-    margin-right: 50px;
-    margin-left: 160px;
+   
     padding: 20px;
+    
 
 }
 .banner-text h1{
@@ -77,8 +74,7 @@ nav{
     margin-left: 10px;
 }
 .banner-img{
-    width: 50%;
-    margin-left: 40px;
+
 }
 .banner-img img{
     width: 550px;
@@ -89,11 +85,10 @@ nav{
     
 }
 .players{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 45px;
-    width: 1160px;
-    margin: 0 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .player{
     padding: 20px;
@@ -116,18 +111,16 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1160px;
-    margin: 0 150px;
 }
 .highlight-text{
-    width: 50%;
     padding: 30px;
+    width: 50%;
 }
 .highlight-text h1{
     font-size: 50px;
 }
 .highlight-video{
-    width: 50%;
+    
 }
 /* Football Logo Section */
 .football-logo{
@@ -172,116 +165,6 @@ nav{
 
 
 /* Responsive Media Queries*/
-@media only screen and (max-width:1300px) {
-    .navbar {
-        width: 1050px;
-        margin: 0 85px;
-    }
-    .banner-text {
-        width: 40%;
-        margin-right: 25px;
-        margin-left: 80px;
-    }
-    .banner-img {
-        margin-left: 15px;
-    }
-    .banner-img img {
-        width: 500px;
-    }
-    .players {
-        margin: 0 40px;
-    }
-    .highlight {
-        margin: 0 50px;
-    }
-    .highlight-text h1 {
-        font-size: 45px;
-    }
-    iframe{
-        width: 530px;
-        height: 360px;
-    }
-    .football-logo img {
-        width: 380px;
-        height: 80px;
-    }
-}
-@media only screen and (max-width: 1050px) {
-    .navbar {
-        width: 980px;
-        margin: 0 20px;
-    }
-    .menu-left span a{
-        margin-right: 15px;
-    }
-    .banner-text {
-        margin-left: 60px;
-    }
-    .banner-text h1 {
-        font-size: 45px;
-    }
-    .banner-img img {
-        width: 450px;
-    }
-    .players {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .player {
-        width: 350px;
-  
-    }
-    .player img {
-        width: 350px;
-        height: 230px;
-    }
-    .highlight-text {
-        width: 40%;
-        padding: 20px;
-    }
-    .highlight-text h1 {
-        font-size: 35px;
-    }
-    iframe {
-        width: 420px;
-        height: 300px;
-    }
-    .football-logo img {
-        width: 350px;
-        height: 60px;
-    }
-}
 @media only screen and (max-width: 800px) {
-    .navbar {
-        width: 90%;
-        margin: 0 20px;
-    }
-    .banner-text h1 {
-        font-size: 35px;
-    }
-    .banner-img {
-        width: 60%;
-        margin-left: -50px;
-    }
-    .banner-img img {
-        width: 400px;
-    }
-    .players {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0 -38px;
-    }
-    .players {
-        width: 300px;
-    }
-    .player img {
-        width: 300px;
-        height: 215px;
-    }
-    .highlight {
-        margin: 0 -30px;
-    }
     
 }
