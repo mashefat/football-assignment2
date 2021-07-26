@@ -51,11 +51,11 @@ nav{
 .banner{
     background: #2d25ad;
     display: flex;
-    justify-content: center;
+    
     align-items: center;
     justify-content: space-around;
     padding: 30px 0;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     
 }
 .banner-text{
@@ -81,7 +81,7 @@ nav{
     transform: translate(30px);
 }
 .banner-img img{
-    width: 550px;
+    width: 100%;
 }
 /* Players section */
 .players-section{
@@ -89,18 +89,18 @@ nav{
     
 }
 .players{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     
     
 
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr) !important;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 40px;
-    justify-items: center;
     
-    grid-column: span; */
+    
+   
 }
 .player{
     padding: 20px;
@@ -237,7 +237,7 @@ iframe{
 
 
 /* Responsive Media Queries*/
-@media  screen and (maxgit a-width: 992px) {
+@media  screen and (max-width: 992px) {
     .banner{
         display: flex;
         flex-wrap: wrap;
@@ -283,10 +283,15 @@ iframe{
         width: 400px;
     }
     .players {
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: center;
-        align-items: center;
+        
+        grid-template-columns: repeat(1, 1fr);
+       
+        
+    
+       /* display: flex;
+       flex-wrap: wrap; */
+       /* justify-content: center;
+        align-items: center; */
     }
     .highlight-text h1 {
         font-size: 30px;
